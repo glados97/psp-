@@ -1,13 +1,7 @@
-/******************************************************************/
-/* Program Assignment:  programa5                                 */
-/* Name:                Gladys Garza                              */
-/* Date:                22/03/2020                                 */
-/******************************************************************/
-//agregado
 import java.io.*;
 import java.lang.Math;
 import java.util.Scanner;
-class programa5{   
+class programa57{   
    public static void main(String[]args){
       
       Scanner s = new Scanner(System.in);
@@ -16,9 +10,7 @@ class programa5{
       double x = s.nextDouble();
       System.out.println("DOF: ");
       double dof = s.nextDouble();
-            
       double sumatoria2 = resolver(x, dof);
-      
       System.out.println("Valor P: "+sumatoria2);
    }
 
@@ -41,12 +33,15 @@ class programa5{
                   int j = k-1;
                   xi[k][0] = (xi[j][0] + dh);
                }     
-               Calculosp5.p1(xi,dof,n);
-               Calculosp5.p2(xi,dof,n);
-               Calculosp5.p3(xi,dof,n);
-               Calculosp5.p4(xi,dof,n);
-               Calculosp5.p5(xi,dof,n);
-               sumatoria1 = Calculosp5.p6(xi,dof,n);            
+               //modificado
+               Calculosp57.p1(xi,dof,n);
+               Calculosp57.p2(xi,dof,n);
+               Calculosp57.p3(xi,dof,n);
+               Calculosp57.p4(xi,dof,n);
+               Calculosp57.p5(xi,dof,n);
+               sumatoria1 = Calculosp57.p6(xi,dof,n);  
+ 
+               //fin modificado         
                n = n-1;
                vez = vez +1;
             }
@@ -66,20 +61,21 @@ class programa5{
                   int j = k-1;
                   xi[k][0] = (xi[j][0] + dh);
                }     
-               Calculosp5.p1(xi,dof,n);
-               Calculosp5.p2(xi,dof,n);
-               Calculosp5.p3(xi,dof,n);
-               Calculosp5.p4(xi,dof,n);
-               Calculosp5.p5(xi,dof,n);
-               sumatoria2 = Calculosp5.p6(xi,dof,n);            
+               //modificado
+               Calculosp57.p1(xi,dof,n);
+               Calculosp57.p2(xi,dof,n);
+               Calculosp57.p3(xi,dof,n);
+               Calculosp57.p4(xi,dof,n);
+               Calculosp57.p5(xi,dof,n);
+               sumatoria2 = Calculosp57.p6(xi,dof,n);    
+               //fin modificado        
                n = n-1;
                vez = vez +1;
             }
          }
          dif = sumatoria1 - sumatoria2;
+
       }while((dif) >= e || dif < 0 );
       return sumatoria2;
    }
 }
-//fin agregado
-

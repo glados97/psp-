@@ -1,5 +1,5 @@
-//agregado
-class Calculosp5{
+//reutilizado
+class Calculosp6{
    public static void p1(double xi[][], double dof, int n){
       for(int i=0;i<n;i++){
          xi[i][1] = 1+(Math.pow(xi[i][0],2)/dof);
@@ -91,4 +91,4 @@ class Calculosp5{
       return sumatoria;
    }   
 }
-//fin agregado
+//fin reutilizado

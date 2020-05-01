@@ -1,5 +1,5 @@
-//agregado
-class Calculosp5{
+//reutilizado
+class Calculosp57{
    public static void p1(double xi[][], double dof, int n){
       for(int i=0;i<n;i++){
          xi[i][1] = 1+(Math.pow(xi[i][0],2)/dof);
@@ -13,7 +13,7 @@ class Calculosp5{
    }
    
    public static void p3(double xi[][], double dof, int n){
-      double parte1=((dof+1)/2)-1;
+      double parte1=((dof+1)/2);
       double parte11 = parte1;               
       if (parte1%1 == 0){
          do{
@@ -34,7 +34,7 @@ class Calculosp5{
       double parte2 = dof*Math.PI;
       double parte22=Math.pow((parte2),(.5));   
       
-      double parte3=((dof)/2)-1;
+      double parte3=((dof)/2);
       double parte33 = parte3;
       if (parte3%1 == 0){
          do{
@@ -91,4 +91,4 @@ class Calculosp5{
       return sumatoria;
    }   
 }
-//fin agregado
+//fin reutilizado
